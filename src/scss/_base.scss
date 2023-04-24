@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    width: 144rem;
+    margin-inline: auto;
+}
+
+body {
+    margin: 0;
+    font-family: $ff;
+    background: $bg;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 124.8rem;
+    margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+    background: $bgBtn;
+    border-radius: 4px;
+    padding: 1.6rem 4.8rem;
+    gap: 1.6rem;
+    @include text($ff, 600, 1.8rem, 2.5rem, $white);
+}
+
+.title {
+    @include text($ff, 700, 3.6rem, 4.9rem, $text);
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin-bottom: 6.5rem;
+}

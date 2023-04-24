@@ -1,0 +1,35 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.featured {
+	&__title {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+        @include text($ff, 700, 1.6rem, 1.6rem, $text);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 0.7;
+        margin-bottom: 8rem;
+	}
+
+	&__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.4rem;
+	}
+
+	&__left {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        padding-bottom: 37.8rem;
+	}
+
+	&__right {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        padding-top: 13.8rem;
+	}
+}

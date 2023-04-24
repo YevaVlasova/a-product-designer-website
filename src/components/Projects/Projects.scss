@@ -1,0 +1,11 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.projects {
+	&__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.4rem;
+        margin-bottom: 24rem;
+	}
+}

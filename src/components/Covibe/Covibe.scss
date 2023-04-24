@@ -1,0 +1,40 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.covibe {
+    margin-top: 12.8rem;
+	&__text {
+        @include text($ff, 700, 1.6rem, 1.6rem, $text);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 0.7;
+        margin-bottom: 1.2rem;
+	}
+
+	&__title {
+        @include text($ff, 700, 3.2rem, 4.8rem, $text);
+        letter-spacing: -0.5px;
+        max-width: 34.4rem;
+        margin-bottom: 11.2rem;
+	}
+
+	&__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 4rem;
+	}
+
+	&__list-title {
+        @include text($ff, 700, 1.6rem, 1.6rem, $text);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 0.7;
+        margin-bottom: 1.2rem;
+	}
+
+	&__list-desc {
+        @include text($ff, 700, 2rem, 3rem, $text);
+        letter-spacing: -0.5px;
+        margin-bottom: 29rem;
+	}
+}

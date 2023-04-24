@@ -1,0 +1,64 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.conclusion {
+    display: flex;
+    flex-direction: column;
+	&__title {
+        @include text($ff, 700, 1.6rem, 1.6rem, $text);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 0.7;
+        margin-bottom: 1.2rem;
+	}
+	&__desc {
+        @include text($ff, 700, 3.2rem, 5.4rem, $text);
+        letter-spacing: -0.5px;
+        margin-bottom: 12.8rem;
+	}
+
+	&__image {
+        margin-bottom: 24.4rem;
+	}
+    &__case {
+        display: inline-block;
+        margin-inline: auto;
+        @include text($ff, 700, 3.2rem, 5.4rem, $text);
+        letter-spacing: -0.5px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        margin-bottom: 15.3rem;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            color: $lineLast;
+        }
+        &::before {
+            background-color: $lineLast;
+            height: 2px;
+            bottom: 0;
+            transform-origin: 100% 50%;
+            transform: scaleX(0);
+            transition: $transition;
+        }
+        &::after {
+            content: attr(data-replace);
+            height: 100%;
+            top: 0;
+            transform-origin: 100% 50%;
+            transform: translate3d(200%, 0, 0);
+            transition: $transition;
+            color: $lineLast;
+        }
+        &:hover::before {
+            transform-origin: 0% 50%;
+            transform: scaleX(1);
+        }
+        &:hover::after {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}

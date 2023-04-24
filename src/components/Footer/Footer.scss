@@ -1,0 +1,39 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.footer {
+    border-top: 1px solid $line;
+    padding: 4.8rem 0 3.6rem;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__name {
+        @include text($ff, 600, 1.6rem, 3.6rem, $footer);
+        letter-spacing: -0.5px;
+    }
+
+    &__a {
+        @include text($ff, 600, 1.6rem, 3.6rem, $footerText);
+        letter-spacing: -0.5px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 4.3rem;
+        align-items: center;
+    }
+
+    &__link {
+        transition: $transition;
+        svg {
+            fill: #959595;
+            &:hover {
+                fill: #FFFFFF;
+            }
+        }
+        
+    }
+}
