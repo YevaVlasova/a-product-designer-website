@@ -2,10 +2,16 @@
 @import 'src/scss/mixins';
 
 .visual {
-	&__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2.4rem;
         margin-bottom: 24rem;
+
+	&__list {
+        display: flex;
+        gap: 2.4rem;
+	}
+        &__item {
+                img {
+                        border-radius: 0.4rem;
+                        max-width: 100%;
+                }
 	}
 }

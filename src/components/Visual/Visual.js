@@ -1,4 +1,6 @@
 import './Visual.scss';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 import firstImage from "../../assets/visual1.png"
 import secondImage from "../../assets/visual2.png"
@@ -12,12 +14,35 @@ export default function Visual() {
     <div className="container visual">
         <div className="title">Visual Explorations</div>
         <div className="visual__list">
+        <Carousel
+          showArrows={true}
+          showThumbs={false}
+          showStatus={false}
+          emulateTouch={true}
+          infiniteLoop={true}
+          centerMode={true}
+          centerSlidePercentage={33.33}
+          
+        >
+          <div className="visual__item">
             <img src={firstImage} alt="Visual" />
+          </div>
+          <div className="visual__item">
             <img src={secondImage} alt="Visual" />
+          </div>
+          <div className="visual__item">
             <img src={thirdImage} alt="Visual" />
+          </div>
+          <div className="visual__item">
             <img src={fourthImage} alt="Visual" />
+          </div>
+          <div className="visual__item">
             <img src={fifthImage} alt="Visual" />
-            <img src={sixthImage} alt="Visual" />            
+          </div>
+          <div className="visual__item">
+            <img src={sixthImage} alt="Visual" /> 
+          </div> 
+        </Carousel>          
         </div>
     </div>
   );
