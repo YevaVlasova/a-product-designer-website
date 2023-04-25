@@ -11,6 +11,9 @@
         justify-content: space-between;
         margin-bottom: 21.6rem;
         gap: 13rem;
+        @include tablet-small {
+            gap: 5rem;
+          }
 	}
 	&__title {
         @include text($ff, 700, 1.6rem, 1.6rem, $text);

@@ -4,8 +4,21 @@
 
 html {
     font-size: 10px;
-    width: 144rem;
+    max-width: 144rem;
     margin-inline: auto;
+    overflow-x: hidden;
+    @include desktop-small {
+        font-size: 9px;
+    }
+    @include tablet {
+        font-size: 8px;
+    }
+    @include tablet-small {
+        font-size: 7px;
+    }
+    @include mobile {
+        font-size: 6px;
+    }
 }
 
 body {
@@ -17,8 +30,12 @@ body {
 }
 
 .container {
-    max-width: 124.8rem;
+    max-width: 128.8rem;
     margin-inline: auto;
+    padding: 0 2rem;
+    @include desktop-small {
+       // padding: 0 2rem;
+    }
 }
 
 a {
@@ -43,4 +60,7 @@ a {
     text-align: center;
     letter-spacing: -0.5px;
     margin-bottom: 6.5rem;
+}
+img {
+    width: 100%;
 }

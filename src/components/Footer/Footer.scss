@@ -8,6 +8,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mobile {
+            flex-direction: column;
+            gap: 2rem;
+          }
     }
 
     &__name {

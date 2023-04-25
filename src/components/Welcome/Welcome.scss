@@ -8,32 +8,33 @@
     align-items: center;
     justify-content: center;
     gap: 23.6rem;
-
-		&__info {
-            
-		}
-
-		&__title {
+    @include desktop-small {
+      gap: 5rem;
+    }
+    @include tablet-small {
+      flex-direction: column;
+    }
+	&__info {
+	}
+	&__title {
             max-width: 50.6rem;
             @include text($ff, 700, 5.4rem, 6.4rem, $text);
             letter-spacing: -0.5px;
             margin-bottom: 2.4rem;
-		}
-
-		&__desc {
+	}
+	&__desc {
             max-width: 39.5rem;
             @include text($ff, 600, 2rem, 3rem, $footer);
             letter-spacing: -0.5px;
             margin-bottom: 8.8rem;
-		}
-
-		&__btn {
-		}
-
-		&__image {
+	}
+	&__image {
             padding-right: 9.3rem;
+            @include tablet {
+                  padding-right: 2rem;
+            }
             img {
                 max-width: 40rem;
             }
-		}
+	}
 }
