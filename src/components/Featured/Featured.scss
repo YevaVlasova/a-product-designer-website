@@ -32,4 +32,38 @@
         gap: 2.4rem;
         padding-top: 13.8rem;
 	}
+        &__image {
+                position: relative;
+                width: 100%;
+                &:hover img {
+                        opacity: 0.3;
+                      }
+                img {
+                        opacity: 1;
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        transition: $transition;
+                        backface-visibility: hidden;
+                }
+        }
+        &__image:hover &__middle {
+                opacity: 1;
+        }
+
+        &__middle {
+                transition: $transition;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+        }
+
+        &__text {
+                @include text($ff, 700, 4rem, 5.5rem, $text);
+                letter-spacing: -0.5px;
+        }
 }

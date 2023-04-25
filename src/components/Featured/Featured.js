@@ -15,12 +15,32 @@ export default function Featured() {
         </div>
         <div className="featured__list">
             <div className="featured__left">
-                <img src={leftfirstImage} alt="Work" />
-                <img src={leftsecondImage} alt="Work" />
+                <div className="featured__image">
+                    <img src={leftfirstImage} alt="Work" />
+                    <div className="featured__middle">
+                        <div className="featured__text">InVersion</div>
+                    </div>
+                </div>
+                <div className="featured__image">
+                    <img src={leftsecondImage} alt="Work" />
+                    <div className="featured__middle">
+                        <div className="featured__text">InVersion</div>
+                    </div>
+                </div>
             </div>
             <div className="featured__right">
-                <img src={rightfirstImage} alt="Work" />
-                <img src={rightsecondImage} alt="Work" />
+                <div className="featured__image">
+                    <img src={rightfirstImage} alt="Work" />
+                    <div className="featured__middle">
+                        <div className="featured__text">InVersion</div>
+                    </div>
+                </div>
+                <div className="featured__image">
+                    <img src={rightsecondImage} alt="Work" />
+                    <div className="featured__middle">
+                        <div className="featured__text">InVersion</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
