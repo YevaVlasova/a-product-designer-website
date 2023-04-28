@@ -64,3 +64,10 @@ a {
 img {
     width: 100%;
 }
+
+html .carousel .control-prev.control-arrow {
+    left: 1.2rem;
+}
+html .carousel .control-next.control-arrow {
+    right: 1.2rem;
+}

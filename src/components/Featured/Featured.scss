@@ -17,22 +17,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2.4rem;
+        padding-bottom: 13.8rem;
+        margin-bottom: 24rem;
 	}
 
-	&__left {
-        display: flex;
-        flex-direction: column;
-        gap: 2.4rem;
-        padding-bottom: 37.8rem;
-	}
-
-	&__right {
-        display: flex;
-        flex-direction: column;
-        gap: 2.4rem;
-        padding-top: 13.8rem;
-	}
         &__image {
+                display: flex;
+                &:nth-child(2n) {
+                        transform: translateY(13.8rem);
+                }
                 position: relative;
                 width: 100%;
                 &:hover img {
