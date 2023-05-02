@@ -4,14 +4,15 @@ import LinkedinIcon from '../Icons/Socials/LinkedinIcon';
 import DribbleIcon from '../Icons/Socials/DribbleIcon';
 import WhatsAppIcon from '../Icons/Socials/WhatsAppIcon';
 import './Footer.scss';
+import CurrentYear from '../CurrentYear/CurrentYear';
 
 export default function Footer() {
   return (
     <div className="footer">
         <div className="container footer__container">
             <div className="footer__name">
-                Made by <a className='footer__a' href="/">Your Name </a>
-                 — Copyright 2021
+                Made by <a className='footer__a' href="/"> Your Name </a>
+                 — Copyright <CurrentYear />
             </div>
             <div className="footer__socials">
                 <a href="/" className="footer__link">

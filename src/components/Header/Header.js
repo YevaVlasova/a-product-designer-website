@@ -10,8 +10,8 @@ export default function Header() {
           <LogoIcon />
         </a>
         <div className="header__nav">
-          <Link to={'/'}><a href="/" className="header__a">Home</a></Link>
-          <Link to={'/work'}><a href="/work" className="header__a">Work</a></Link>
+          <Link to={'/'} className="header__a">Home</Link>
+          <Link to={'/work'} className="header__a">Work</Link>
           <a href="/" className="header__a">Contact</a>
         </div>
       </div>
